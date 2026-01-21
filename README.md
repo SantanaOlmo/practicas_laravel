@@ -52,10 +52,40 @@ Modificamos el archivo `resources/js/Pages/Welcome.jsx` implementando:
 
 El código resultante se ha guardado en la carpeta `act1/Welcome.jsx` de este repositorio.
 
-## 6. Actividad 2
-Se creó una estructura separada para la segunda iteración:
--   Carpeta `act2` creada.
--   Componente `Welcome.jsx` replicado y adaptado.
+## 6. Realización de la Actividad 2: De Diseño Estático a Dinámico
+Para esta actividad, transformamos el diseño "muerto" en una interfaz reactiva.
+
+### Pasos realizados:
+
+1.  **Definición de Variables (PHP vs JS)**:
+    -   En lugar de usar PHP (`$variable`), declaramos constantes dentro de la función del componente `Welcome`:
+        ```javascript
+        const nombreUsuario = "Alberto"; // Variable simple
+        const tareasPendientes = ["Instalar Laravel", "Configurar React", ...]; // Array
+        ```
+
+2.  **Interpolación en HTML**:
+    -   Sustituimos los textos estáticos por variables usando llaves `{ }`.
+    -   Ejemplo: `<h1>TaskHub de {nombreUsuario}</h1>` muestra el nombre dinámicamente.
+
+3.  **Renderizado de Listas (El sustituto del `foreach`)**:
+    -   Usamos el método `.map()` para recorrer el array `tareasPendientes`.
+    -   Por cada tarea, generamos un `<li>` automáticamente:
+        ```javascript
+        {tareasPendientes.map((tarea, index) => (
+            <li key={index}>...</li>
+        ))}
+        ```
+
+4.  **Lógica Condicional (Estilos Dinámicos)**:
+    -   Implementamos un operador ternario para cambiar el color si la tarea es importante (ej. contiene "Laravel").
+    -   Código usado:
+        ```javascript
+        className={`... ${tarea.includes("Laravel") ? "text-blue-600 font-bold" : ""}`}
+        ```
+
+5.  **Visualización**:
+    -   Modificamos el punto de entrada `main.jsx` para importar el componente de `act2/Welcome.jsx`, permitiendo ver esta versión específica en el navegador.
 
 ---
 *Repositorio estructurado por Alberto.*
