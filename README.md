@@ -5,11 +5,11 @@ Este repositorio contiene el desarrollo progresivo de las actividades de clase p
 ![taskhub](assets/taskhub.png)
 
 ## Estructura del Repositorio
-El repositorio se divide en tres secciones claras, que representan la evolución del aprendizaje:
+El repositorio se divide en tres secciones claras:
 
-1.  **Carpeta `act1/`**: Primera iteración (Dinámica básica).
-2.  **Carpeta `act2/`**: Segunda iteración (Refuerzo y reestructuración).
-3.  **Carpeta `taskhub/`**: **PROYECTO FINAL** en Laravel Framework.
+1.  **Carpeta `act1/`**: Primera iteración (Código fuente).
+2.  **Carpeta `act2/`**: Segunda iteración (Código fuente reorganizado).
+3.  **Carpeta `taskhub/`**: **PROYECTO FINAL** en Laravel Framework (Ejecutable).
 
 ---
 
