@@ -1,5 +1,7 @@
 # Documentación de la Práctica: TaskHub
 
+![taskhub](assets/taskhub.png)
+
 A continuación se detalla el proceso completo seguido para la **Actividad 1** y **Actividad 2**, basándonos en el stack Laravel + React + Tailwind.
 
 ## 1. Preparación de la "Caja de Herramientas"
