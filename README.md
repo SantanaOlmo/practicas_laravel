@@ -25,12 +25,25 @@ En esta carpeta se encuentra el archivo `Welcome.jsx` original modificado.
 ## 2. Actividad 2 (`act2`)
 *Objetivo: Consolidación y Organización.*
 
-Se replicó la lógica de la Actividad 1 en una estructura de carpetas independiente.
+Repliqué la lógica de la Actividad 1 en una estructura de carpetas independiente.
 -   **Estado final**: El código es funcionalmente idéntico a la Actividad 1, pero organizado en su propio directorio para entrega separada.
 
 ---
 
-## 3. Proyecto Final: TaskHub (Laravel)
+## 3. Actividad 3 (Estado y Eventos)
+*Objetivo: Profundizar en `useState` y Lógica Condicional.*
+
+Evolucioné el componente `Welcome.jsx` introduciendo interactividad real:
+-   **Nuevo Estado `contador`**: Variable numérica inicializada en 0 para controlar el límite de tareas.
+-   **Lógica de Incremento**: Al añadir una tarea, el contador aumenta (`setContador(contador + 1)`).
+-   **Renderizado Condicional (Botón)**:
+    -   Cuando el contador llega a 10, el botón cambia visualmente:
+        -   **Color**: Pasa de índigo a rojo (`bg-red-500`).
+        -   **Texto**: Cambia de "Añadir Tarea..." a "¡Lista Llena!".
+
+---
+
+## 4. Proyecto Final: TaskHub (Laravel)
 *Carpeta: `taskhub/`*
 
 Esta es la implementación **real y completa** utilizando el Framework Laravel, siguiendo todos los pasos oficiales del enunciado.
@@ -75,4 +88,5 @@ Para ver la versión final, necesitas dos terminales dentro de la carpeta `taskh
 2.  **Frontend**: `npm run dev`
 
 ---
-*Práctica realizada por Alberto.*
+*Práctica realizada por Alberto Estepa Gómez.*
+
