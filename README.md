@@ -2,13 +2,14 @@
 
 Este repositorio contiene el desarrollo progresivo de las actividades de clase para la creación de **TaskHub**.
 
-![taskhub](assets/taskhub.png)
+![taskhub](assets/taskhub.gif)
 
 ## Índice de Ejercicios
 1.  [Actividad 1: Introducción a JSX](#1-actividad-1-act1)
 2.  [Actividad 2: Organización de Componentes](#2-actividad-2-act2)
 3.  [Actividad 3: Estado y Eventos (Contador)](#3-actividad-3-estado-y-eventos)
 4.  [Proyecto Final: TaskHub (Laravel)](#4-proyecto-final-taskhub-laravel)
+5.  [Fase 5: Todo List Interactivo (CRUD)](#5-fase-5-todo-list-interactivo-crud)
 
 ## Estructura del Repositorio
 El repositorio se divide en tres secciones claras:
@@ -98,4 +99,24 @@ Para ver la versión final, necesitas dos terminales dentro de la carpeta `taskh
 
 ---
 *Práctica realizada por Alberto Estepa Gómez.*
+
+---
+
+## 5. Fase 5: Todo List Interactivo (CRUD)
+*Objetivo: Implementación de un sistema CRUD completo en el frontend con React y Tailwind.*
+
+En esta fase, se ha refactorizado completamente `Welcome.jsx` para crear una aplicación de gestión de tareas funcional y estética.
+
+### Características Implementadas:
+1.  **Gestión de Tareas (CRUD)**:
+    -   **Crear**: Input con validación para añadir nuevas tareas.
+    -   **Leer**: Listado dinámico de tareas pendientes y completadas.
+    -   **Actualizar**: Edición 'inline' del título de la tarea al hacer click, y checkbox para marcar como completada.
+    -   **Eliminar**: Botón para limpiar todas las tareas completadas de una vez.
+2.  **Componentización**:
+    -   `TaskStats`: Muestra contadores (Total, Completadas) y una barra de progreso.
+    -   `TaskItem`: Componente individual que maneja su propio estado de edición.
+3.  **Experiencia de Usuario (UX)**:
+    -   **Diseño**: Interfaz limpia y profesional usando Tailwind CSS.
+    -   **No-Select**: Se ha deshabilitado la selección de texto en la interfaz general para dar sensación de "aplicación nativa", permitiéndola solo en los campos de escritura.
 
