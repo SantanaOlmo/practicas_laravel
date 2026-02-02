@@ -48,7 +48,7 @@ export default function TaskItem({ task, onToggle, onUpdateTitle }) {
                         onChange={(e) => setEditValue(e.target.value)}
                         onBlur={finishEditing}
                         onKeyDown={handleKeyDown}
-                        className="block w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-blue-500 focus:ring-0 focus:border-blue-500 px-0 py-1"
+                        className="block w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-blue-500 focus:ring-0 focus:border-blue-500 px-0 py-1 select-text"
                     />
                 ) : (
                     <span

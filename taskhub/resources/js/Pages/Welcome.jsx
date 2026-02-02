@@ -47,7 +47,7 @@ export default function Welcome() {
     return (
         <>
             <Head title="Lista de Tareas" />
-            <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-sans">
+            <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-sans select-none">
                 <div className="max-w-3xl mx-auto">
                     {/* Header */}
                     <div className="mb-8 text-center">
@@ -77,7 +77,7 @@ export default function Welcome() {
                                     onChange={(e) => setInputValue(e.target.value)}
                                     onKeyDown={handleKeyDown}
                                     placeholder="Añadir nueva tarea"
-                                    className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 pl-4 py-3 text-gray-900 placeholder-gray-400 text-lg transition-colors"
+                                    className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 pl-4 py-3 text-gray-900 placeholder-gray-400 text-lg transition-colors select-text"
                                 />
                             </div>
                             <button

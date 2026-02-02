@@ -4,12 +4,19 @@ Este repositorio contiene el desarrollo progresivo de las actividades de clase p
 
 ![taskhub](assets/taskhub.png)
 
+## Índice de Ejercicios
+1.  [Actividad 1: Introducción a JSX](#1-actividad-1-act1)
+2.  [Actividad 2: Organización de Componentes](#2-actividad-2-act2)
+3.  [Actividad 3: Estado y Eventos (Contador)](#3-actividad-3-estado-y-eventos)
+4.  [Proyecto Final: TaskHub (Laravel)](#4-proyecto-final-taskhub-laravel)
+
 ## Estructura del Repositorio
 El repositorio se divide en tres secciones claras:
 
 1.  **Carpeta `act1/`**: Primera iteración (Código fuente).
 2.  **Carpeta `act2/`**: Segunda iteración (Código fuente reorganizado).
-3.  **Carpeta `taskhub/`**: **PROYECTO FINAL** en Laravel Framework (Ejecutable).
+3.  **Carpeta `act3/`**: Tercera iteración (Contador y Estados).
+4.  **Carpeta `taskhub/`**: **PROYECTO FINAL** en Laravel Framework (Ejecutable).
 
 ---
 
@@ -36,10 +43,12 @@ Repliqué la lógica de la Actividad 1 en una estructura de carpetas independien
 Evolucioné el componente `Welcome.jsx` introduciendo interactividad real:
 -   **Nuevo Estado `contador`**: Variable numérica inicializada en 0 para controlar el límite de tareas.
 -   **Lógica de Incremento**: Al añadir una tarea, el contador aumenta (`setContador(contador + 1)`).
+-   **Lógica de Bloqueo**: Si el contador llega a 10, **se impide añadir más tareas**.
 -   **Renderizado Condicional (Botón)**:
     -   Cuando el contador llega a 10, el botón cambia visualmente:
         -   **Color**: Pasa de índigo a rojo (`bg-red-500`).
         -   **Texto**: Cambia de "Añadir Tarea..." a "¡Lista Llena!".
+-   **Carpeta**: El código fuente de esta actividad se ha guardado en `act3/` para referencia.
 
 ---
 
